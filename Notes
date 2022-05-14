@@ -9,4 +9,31 @@ React is a JavaScript library for building user interfaces.
    return(
     <h2>{name}</h2>     // to access js elements use {}
   )
-- 
+- Web page / UI is just a bunch of components.
+- Styling:
+   return(
+   <h1 style={styling}>Hello</h1>)     // <h1> is a component
+   const styling={    // styling is a variable
+   color:'red'
+   }
+ - props:
+   App.js
+   <header color='red'/>
+   <header color='green'/>       //reusing of components output-- 2 times Hello
+   Header.js
+   <div style={{backgroundColor:color}}>Hello</div>
+   
+ - Props are arguments passed into React components.
+   React Props are like function arguments in JavaScript and attributes in HTML.
+   const myElement = <Car brand="Ford" />;
+   
+ - Events:
+   function Football() {
+  const shoot = () => {          //shoot is an event handler function
+    alert("Great Shot!");
+  }
+
+  return (
+    <button onClick={shoot}>Take the shot!</button>
+  );
+}
