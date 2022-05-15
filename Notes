@@ -1,9 +1,23 @@
 React is a JavaScript library for building user interfaces.
 - Components return JSX.
 - Components can have state which is an object that dteremines how a component renders/behaves.
+   Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+   Create a Function component called Car
+   function Car() {
+      return <h2>Hi, I am a Car!</h2>;
+   }
+- Props are like function arguments, and you send them into the component as attributes.
+   Use an attribute to pass a color to the Car component, and use it in the render() function:
+
+function Car(props) {
+  return <h2>I am a {props.color} Car!</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car color="red"/>);
 - Context API is used to manage a lot of states in components.
 - React hooks are react functions that let us hook into React state from function components.
-- useEffect- fetches HTTP requests when page reloads.
+- useEffect- fetches HTTP requests when page reloads / does something at page reload.
 - useState- returns a stateful value and a function to update it.
 - const name=Ram
    return(
@@ -37,3 +51,4 @@ React is a JavaScript library for building user interfaces.
     <button onClick={shoot}>Take the shot!</button>
   );
 }
+
