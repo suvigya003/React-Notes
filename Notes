@@ -6,12 +6,6 @@ React is a JavaScript library for building user interfaces.
    function Car() {
       return <h2>Hi, I am a Car!</h2>;
    }
-- Props are like function arguments, and you send them into the component as attributes.
-   Use an attribute to pass a color to the Car component, and use it in the render() function:
-
-function Car(props) {
-  return <h2>I am a {props.color} Car!</h2>;
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car color="red"/>);
@@ -52,3 +46,72 @@ root.render(<Car color="red"/>);
   );
 }
 
+- Create a list using .map() function
+   const tasks=[     //here task state is outside main function, to use state inside function useState is used
+   {
+   id: '
+   text: ,
+   },
+   {
+   id: '
+   text: ,
+   }
+   ]
+   func =()=>{
+   return(
+   {tasks.map((task)=>(<h3>{task.text}</h3>))}
+   )
+   }
+   // to pass within the function
+   func =()=>{
+   const [tasks, setTasks]=useState([
+   {
+   id: '
+   text: ,
+   },
+   {
+   id: '
+   text: ,
+   }]
+   )
+   return(
+   {tasks.map((task)=>(<h3>{task.text}</h3>))}
+   )
+   }
+   
+   //to use the state anywhere, it is passed globally 
+   App.js
+   const [tasks, setTasks]=useState([
+   {
+   id: '
+   text: ,
+   },
+   {
+   id: '
+   text: ,
+   }]
+   )
+   
+   return(
+   <Tasks tasks={tasks}/>
+   )
+   
+   Tasks.js
+   func =({tasks})=>{
+   return(
+   {tasks.map((task)=>(<h3>{task.text}</h3>))}     //tasks is a function passed inside map
+   )
+   
+- setTodo(...todo, {})     //...todo -- brings old data and {} -- adds new one to current array/list
+
+- updating setTasks:
+   const toggle=(id)=>{
+   setTasks(
+   tasks.map((task)=>task.id===id?{...task , reminder : task.reminder}:task)
+   )
+   }
+   
+- <input value={text} onChange={(e)=> setText(e.target.value)}/>     // e.target.value sets the value by setText whatever is typed in
+ 
+- <div className= {`task ${ task.reminder ? reminder : ''}`}>        //task will be the class no matter what, 
+// more will be added if condition given by ${} gets fulfilled , it's all due to ``
