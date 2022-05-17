@@ -1,4 +1,4 @@
-React is a JavaScript library for building user interfaces.
+React is a JavaScript library for building user interfaces which is useful in developing user interfaces specifically for applications with a single page.
 - Components return JSX.
 - Components can have state which is an object that dteremines how a component renders/behaves.
    Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
