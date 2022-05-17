@@ -1,5 +1,11 @@
 React is a JavaScript library for building user interfaces which is useful in developing user interfaces specifically for applications with a single page.
-- JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM
+- JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM.
+- Virtual DOM
+   React uses two virtual DOMs to render the user interface. 
+   One of them is used to store the current state of the objects and the other to store the previous state of the objects. 
+   Whenever the virtual DOM gets updated, react compares the two virtual DOMs and gets to know about which virtual DOM objects were updated. 
+   After knowing which objects were updated, react renders only those objects inside the real DOM instead of rendering the complete real DOM. 
+   This way, with the use of virtual DOM, react solves the problem of inefficient updating.   
 - Components return JSX.
 - Components can have state which is an object that dteremines how a component renders/behaves.
    Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
@@ -103,6 +109,9 @@ root.render(<Car color="red"/>);
    {tasks.map((task)=>(<h3>{task.text}</h3>))}     //tasks is a function passed inside map
    )
    
+- useState
+   Since useState hook returns an array of two items, the first item contains the current state, and the second item is a function used to update the state.
+      
 - setTodo(...todo, {})     //...todo -- brings old data and {} -- adds new one to current array/list
 
 - updating setTasks:
