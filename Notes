@@ -17,9 +17,6 @@ React is a JavaScript library for building user interfaces which is useful in de
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car color="red"/>);
 - Context API is used to manage a lot of states in components.
-- React hooks are react functions that let us hook into React state from function components.
-- useEffect- fetches HTTP requests when page reloads / does something at page reload.
-- useState- returns a stateful value and a function to update it.
 - const name=Ram
    return(
     <h2>{name}</h2>     // to access js elements use {}
@@ -28,6 +25,9 @@ root.render(<Car color="red"/>);
 - React hooks:
    React Hooks are the built-in functions.
    Using Hook, all features of React can be used without writing class components.
+   React hooks are react functions that let us hook into React state from function components.
+   - useEffect- fetches HTTP requests when page reloads / does something at page reload.
+   - useState- returns a stateful value and a function to update it.
   
 - Web page / UI is just a bunch of components.
 - Styling:
@@ -119,7 +119,7 @@ root.render(<Car color="red"/>);
    Tasks.js
    func =({tasks})=>{
    return(
-   {tasks.map((task)=>(<h3>{task.text}</h3>))}     //tasks is a function passed inside map
+   {tasks.map((task)=>(<h3>{task.text}</h3>))}     //task is a function passed inside map
    )
    
 - useState
@@ -152,5 +152,5 @@ root.render(<Car color="red"/>);
    
 - <input value={text} onChange={(e)=> setText(e.target.value)}/>     // e.target.value sets the value by setText whatever is typed in
  
-- <div className= {`task ${ task.reminder ? reminder : ''}`}>        //task will be the class no matter what, 
+- <div className= {`task ${ task.reminder ? reminder : ''}`}>        //task will be the class no matter what other conditions are, 
 // more will be added if condition given by ${} gets fulfilled , it's all due to ``
