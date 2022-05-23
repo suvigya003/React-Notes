@@ -155,3 +155,16 @@ root.render(<Car color="red"/>);
  
 - <div className= {`task ${ task.reminder ? reminder : ''}`}>        //task will be the class no matter what other conditions are, 
 // more will be added if condition given by ${} gets fulfilled , it's all due to ``
+
+- array.sort() method
+   The sort method without any arguments sorts values alphabetically.
+   1) function numAscending(a,b) {
+    return a - b;
+   }
+   the sort function compares each pair of values if a - b is negative then a comes before b, if a - b is positive b comes before a.
+   2) function numRandomized() {
+    return 0.5 - Math.random();
+   }
+   will return a random order because the function returns a number that is equally likely to be either negative or positive it will cause a random order.
+   0.5 - Math.random() will give you random numbers that are roughly 50% negative and 50% positive.
+   The comparision happens more than just one time and each time with different arguement due to Math.random
