@@ -52,7 +52,9 @@ root.render(<Car color="red"/>);
    }
  - State:
    A Js object used to represent info in or about a particular component. 
+   It is handled inside a component.
  - props:
+   They are handled outside the component.
    App.js
    <header color='red'/>
    <header color='green'/>       //reusing of components output-- 2 times Hello
