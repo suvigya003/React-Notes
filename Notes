@@ -4,6 +4,11 @@ NPX is temporary for 1 app. Pkgs are used and then removed when app is complete.
 React is a JavaScript library for building user interfaces which is useful in developing user interfaces specifically for applications with a single page. 
 It is a server side scripting language.
 - JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM.
+- DOM
+   The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. 
+   It defines the logical structure of documents and the way a document is accessed and manipulated.
+   With the Document Object Model, programmers can build documents, navigate their structure, and add, modify, or delete elements and content. 
+   Anything found in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model.
 - Virtual DOM
    React uses two virtual DOMs to render the user interface. 
    One of them is used to store the current state of the objects and the other to store the previous state of the objects. 
