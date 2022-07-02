@@ -15,7 +15,12 @@ It is a server side scripting language.
    Whenever the virtual DOM gets updated, react compares the two virtual DOMs and gets to know about which virtual DOM objects were updated. 
    After knowing which objects were updated, react renders only those objects inside the real DOM instead of rendering the complete real DOM. 
    This way, with the use of virtual DOM, react solves the problem of inefficient updating.   
-- Components return JSX.
+- Component lifecycle:
+   Initialisation
+   Mounting
+   Updation
+   Unmounting
+- Components is a class or function that returns JSX.
 - Components can have state which is an object that dteremines how a component renders/behaves.
    Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
    Create a Function component called Car
@@ -45,6 +50,8 @@ root.render(<Car color="red"/>);
    const styling={    // styling is a variable
    color:'red'
    }
+ - State:
+   A Js object used to represent info in or about a particular component. 
  - props:
    App.js
    <header color='red'/>
