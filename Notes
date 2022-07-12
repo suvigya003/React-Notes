@@ -62,6 +62,7 @@ root.render(<Car color="red"/>);
    <div style={{backgroundColor:color}}>Hello</div>
    
  - Props are arguments passed into React components.
+   They are used to differentiate the components when we are reusing it.
    React Props are like function arguments in JavaScript and attributes in HTML.
    Props are the data passed from a parent component into a child component.
    Using props, we can pass data from one component to another.
