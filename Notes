@@ -140,6 +140,12 @@ root.render(<Car color="red"/>);
    return(
    {tasks.map((task)=>(<h3>{task.text}</h3>))}     //task is a function passed inside map
    )
+ 
+- useEffect 
+   Runs a piece of code on a specific condition.
+   useEffect(()=>{
+   // this code runs
+   },[//condition is given here]);   
    
 - useState
    Since useState hook returns an array of two items, the first item contains the current state, and the second item is a function used to update the state.
